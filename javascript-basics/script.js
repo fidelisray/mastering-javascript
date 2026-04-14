@@ -1,8 +1,12 @@
 /*
-    Tipe Data :
-        - String
-        - Number
-        - Boolean
+    Primitive Data Type :
+        - number -> floating point numbers
+        - string
+        - boolean
+        - null
+        - undefined
+        - symbol
+        - BigInt
 */
 
 let myString = 'z'; // String
@@ -29,3 +33,17 @@ console.log(`isSparkyWhite : ${isSparkyWhite} -> type ${typeof isSparkyWhite}`);
 
 let phi = 3.14; // number
 console.log(`phi : ${phi} -> typeof phi ${typeof phi}`);
+
+
+/* 
+    Non Primitive Data Type
+*/
+
+let myDog = {
+    'name': "Pico Margondez",
+    'gender': "Female",
+    'bark': function() {
+        console.log("Whoof!");
+    }
+}
+myDog.bark();
