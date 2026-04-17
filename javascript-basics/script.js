@@ -3,8 +3,7 @@
         - number -> floating point numbers
         - string
         - boolean
-        - null
-        - undefined
+        - undefined -> no value
         - symbol
         - BigInt
 */
@@ -36,14 +35,23 @@ console.log(`phi : ${phi} -> typeof phi ${typeof phi}`);
 
 
 /* 
-    Non Primitive Data Type
+    Non Primitive Data Type :
+        - Object
 */
 
 let myDog = {
-    'name': "Pico Margondez",
-    'gender': "Female",
-    'bark': function() {
+    name: "Pico Margondez",
+    gender: "Female",
+    age: 2,
+    bark: function() {
         console.log("Whoof!");
+    },
+    bark: function() {
+        return 'Whoof!';
     }
-}
-myDog.bark();
+};
+
+console.log(`My Dog's Name : ${myDog.name}`);
+console.log(`Gender        : ${myDog.gender}`);
+console.log(`Age           : ${myDog.age}`);
+console.log(`What it say? ${myDog.bark()}`);
