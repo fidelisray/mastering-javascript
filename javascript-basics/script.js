@@ -8,30 +8,34 @@
         - BigInt
 */
 
-let myString = 'z'; // String
-let myString2 = "z"; // String
+let iniString = "Pico Margondez"; // String
+let iniJugaString = 'Sparky White'; // String
 
-console.log(myString);
-console.log(myString2);
-console.log(typeof myString);
-console.log(typeof myString2);
-
-let pico = "Pico Margondez"; // String
-let sparky = 'Sparky White'; // String
-
-console.log(pico);
-console.log(sparky);
-console.log(typeof pico);
-console.log(typeof sparky);
+console.log(iniString);
+console.log(iniJugaString);
+console.log(typeof iniString);
+console.log(typeof iniJugaString);
 
 let umurPico = 3; // number
 let isSparkyWhite = true; // boolean
 
-console.log(`umurPico : ${umurPico} -> type ${typeof umurPico}`);
-console.log(`isSparkyWhite : ${isSparkyWhite} -> type ${typeof isSparkyWhite}`);
+console.log("umurPico :" + " " + umurPico + " " + "-> type" + " " + typeof umurPico);
+console.log("isSparkyWhite :" + " " + isSparkyWhite + " " + "-> type" + " " + typeof isSparkyWhite);
 
 let phi = 3.14; // number
-console.log(`phi : ${phi} -> typeof phi ${typeof phi}`);
+console.log("phi :" + " " + phi + "-> typeof" + " " + "phi" + " " + typeof phi);
+
+let tidakDidefinisikan; // undefined
+console.log(tidakDidefinisikan);
+console.log("Type Of 'tidakDidefinisikan' : " + typeof tidakDidefinisikan);
+
+let mySymbol = Symbol("symbol 1");
+console.log(mySymbol);
+console.log(typeof mySymbol);
+let my2ndSymbol = Symbol("symbol 1");
+console.log(my2ndSymbol);
+console.log(typeof my2ndSymbol);
+console.log("mySymbol == my2ndSymbol " + (mySymbol == my2ndSymbol));
 
 
 /* 
@@ -51,7 +55,7 @@ let myDog = {
     }
 };
 
-console.log(`My Dog's Name : ${myDog.name}`);
-console.log(`Gender        : ${myDog.gender}`);
-console.log(`Age           : ${myDog.age}`);
-console.log(`What it say? ${myDog.bark()}`);
+console.log("My Dog's Name :" + " " + myDog.name);
+console.log("Gender        :" + " " + myDog.gender);
+console.log("Age           :" + " " + myDog.age);
+console.log("What's Pico say?" + " " + myDog.bark());
