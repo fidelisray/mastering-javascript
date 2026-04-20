@@ -1,9 +1,9 @@
 /*
     Primitive Data Type :
-        - number -> floating point numbers
+        - number -> floating point numbers (used for decimals and integers)
         - string
-        - boolean
-        - undefined -> no value
+        - boolean -> logical (value: true / false)
+        - undefined -> value taken from a variable that is not yet defined
         - symbol
         - BigInt
 */
@@ -46,7 +46,8 @@ console.log("mySymbol == my2ndSymbol " + (mySymbol == my2ndSymbol));
 let myDog = {
     name: "Pico Margondez",
     gender: "Female",
-    age: 2,
+    birthYear: 2022,
+    weight: 20,
     bark: function() {
         console.log("Whoof!");
     },
@@ -57,5 +58,18 @@ let myDog = {
 
 console.log("My Dog's Name :" + " " + myDog.name);
 console.log("Gender        :" + " " + myDog.gender);
-console.log("Age           :" + " " + myDog.age);
+console.log("Birth Year    :" + " " + myDog.birthYear);
+console.log("Weight        :" + " " + myDog.weight + " kg");
 console.log("What's Pico say?" + " " + myDog.bark());
+
+
+/*
+    Operators
+*/
+
+// 1. Mathematical Operators
+
+let thisYear = 2025;
+let myDogAge = thisYear - myDog.birthYear;
+
+console.log("My Dog's Age : " + myDogAge + " years old");
