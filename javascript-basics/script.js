@@ -73,3 +73,15 @@ let thisYear = 2025;
 let myDogAge = thisYear - myDog.birthYear;
 
 console.log("My Dog's Age : " + myDogAge + " years old");
+
+let tomatoesPrices = 15000;
+let potatoesPrices = 18000;
+
+let total = tomatoesPrices + potatoesPrices;
+console.log("Buy 1kg Potatoes and 1kg Tomatoes, Total Prices : Rp." + total + ".00-");
+
+let twoKiloTomatoes = tomatoesPrices * 2;
+console.log("Buy 2kg Tomatoes, Total Prices : Rp." + twoKiloTomatoes + ".00-");
+
+let halfKiloPotatoes = potatoesPrices / 2;
+console.log("Half kilo Potatoes = Rp." + halfKiloPotatoes + ".00-");
