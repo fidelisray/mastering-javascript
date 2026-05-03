@@ -144,7 +144,7 @@ console.log(`y ?? x -> ${y ?? x}`);
 */
 
 
-// 3. Comparisson Operator
+// 3. Comparison Operator
 
 const var1 = 4;
 const var2 = "4"
@@ -225,3 +225,39 @@ console.log(`~${myNumber4} -> ${~myNumber4}`);
 
 // --- Bitwise XOR (^)
 console.log(`${myNumber3} ^ ${myNumber4} -> ${myNumber3 ^ myNumber4}`);
+
+
+// 5. String operator
+console.log("\n------------- String Operator");
+
+const myString = 'Hello, My Name is';
+const picoSay = myString + ' ' + 'Pico';
+
+console.log(picoSay);
+
+const myDogName = "Sparky";
+const myDogHobby = myDogName + ' likes to bark';
+console.log(myDogHobby);
+
+let myFirstName = "Fidelis Raymond Jose";
+console.log(`My Full Name is ${myFirstName+= " Airudin"}`);
+
+/*
+// 6. Conditional (Ternary) Operator
+console.log("\n------------- Conditional Operator (Ternary)");
+
+let a = 10;
+let b = 15;
+
+console.log(a > b ? "a is greater than b" : "a is less than b");
+*/
+
+// 7. Comma Operator
+console.log("\n------------- Comma Operator");
+
+const x = [0,1,2];
+const myArr = [x,x,x,x];
+
+for(let i = 0, j = x.length - 1; i <= j; i++, j--) {
+    console.log(`myArr[${i}][${j}] = ${myArr[i][j]}`);
+}
